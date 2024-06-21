@@ -36,6 +36,6 @@ TextStyle title1Bold = const TextStyle(
 TextStyle title2Bold = const TextStyle(
     fontSize: 16, height: 1.4, color: white, fontWeight: FontWeight.bold);
 TextStyle bodyBold = const TextStyle(
-    fontSize: 14, height: 1.4, color: white, fontWeight: FontWeight.bold);
+    fontSize: 14, height: 1.4, color: white2, fontWeight: FontWeight.bold);
 TextStyle captionBold = const TextStyle(
     fontSize: 11, height: 1.4, color: white, fontWeight: FontWeight.bold);
