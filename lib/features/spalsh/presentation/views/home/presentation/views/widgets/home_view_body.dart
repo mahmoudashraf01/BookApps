@@ -1,7 +1,7 @@
-import 'package:books_app/core/utils/assets.dart';
-import 'package:books_app/core/utils/colors.dart';
+import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_app_bar.dart';
+import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -11,32 +11,28 @@ class HomeViewBody extends StatelessWidget {
     return const Column(
       children: [
         CustomAppBar(),
+        // CustomImage(),
+        BooksListView(),
       ],
     );
   }
 }
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+class BooksListView extends StatelessWidget {
+  const BooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 5),
-      child: Row(
-        children: [
-          Assets.logoImage,
-          const Spacer(),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              FontAwesomeIcons.magnifyingGlass,
-              size: 24,
-              color: white,
-            ),
-          )
-        ],
-      ),
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * .3,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: CustomImage(),
+            );
+          }),
     );
   }
 }
