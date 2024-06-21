@@ -25,6 +25,9 @@ class HomeViewBody extends StatelessWidget {
             style: title1Bold,
           ),
         ),
+        const SizedBox(
+          height: 20,
+        ),
         const BestSellerListViewItem(),
       ],
     );
@@ -43,17 +46,33 @@ class BestSellerListViewItem extends StatelessWidget {
         child: Row(
           children: [
             AspectRatio(
-          aspectRatio: 2.6 / 4,
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              image: const DecorationImage(
-                image: AssetImage(Assets.image),
-                fit: BoxFit.cover,
+              aspectRatio: 2.6 / 4,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: const DecorationImage(
+                    image: AssetImage(Assets.image),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
             ),
-          ),
-        )
+            const SizedBox(
+              width: 30,
+            ),
+            Column(
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width *.5,
+                  child: Text(
+                    'The Lord Of The Rings The Retrun of The King',
+                    style: title1Bold,
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 2,
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),

@@ -32,10 +32,10 @@ TextStyle h4Bold = const TextStyle(
 TextStyle h5Bold = const TextStyle(
     fontSize: 23, height: 1.4, color: white, fontWeight: FontWeight.bold);
 TextStyle title1Bold = const TextStyle(
-    fontSize: 19, height: 1.4, color: white, fontWeight: FontWeight.bold);
+    fontSize: 20, height: 1.4, color: white, fontWeight: FontWeight.bold);
 TextStyle title2Bold = const TextStyle(
     fontSize: 16, height: 1.4, color: white, fontWeight: FontWeight.bold);
 TextStyle bodyBold = const TextStyle(
-    fontSize: 13, height: 1.4, color: white, fontWeight: FontWeight.bold);
+    fontSize: 14, height: 1.4, color: white, fontWeight: FontWeight.bold);
 TextStyle captionBold = const TextStyle(
     fontSize: 11, height: 1.4, color: white, fontWeight: FontWeight.bold);
