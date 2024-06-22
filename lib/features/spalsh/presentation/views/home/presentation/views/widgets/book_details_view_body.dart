@@ -1,5 +1,6 @@
 import 'package:books_app/core/utils/colors.dart';
 import 'package:books_app/core/utils/text.dart';
+import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/book_rating.dart';
 import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +39,12 @@ class BookDetailsViewBody extends StatelessWidget {
             'J.Tolken',
             style: title1Bold.copyWith(
                 fontStyle: FontStyle.italic, color: white.withOpacity(0.8)),
+          ),
+          const SizedBox(
+            height: 5,
+          ),
+          const BookRating(
+            mainAxisAlignment: MainAxisAlignment.center,
           ),
         ],
       ),
