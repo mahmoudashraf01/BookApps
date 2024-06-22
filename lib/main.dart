@@ -1,7 +1,5 @@
 import 'package:books_app/core/utils/app_routers.dart';
-import 'package:books_app/features/spalsh/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 void main() {

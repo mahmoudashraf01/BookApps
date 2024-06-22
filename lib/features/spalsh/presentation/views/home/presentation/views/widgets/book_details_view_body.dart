@@ -1,8 +1,10 @@
 import 'package:books_app/core/utils/colors.dart';
 import 'package:books_app/core/utils/text.dart';
 import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/book_rating.dart';
+import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/books_action.dart';
 import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -46,8 +48,13 @@ class BookDetailsViewBody extends StatelessWidget {
           const BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          const BookAction(),
         ],
       ),
     );
   }
 }
+

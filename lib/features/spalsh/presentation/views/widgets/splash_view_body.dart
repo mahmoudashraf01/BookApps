@@ -1,7 +1,6 @@
 import 'package:books_app/core/utils/animated_text.dart';
 import 'package:books_app/core/utils/app_routers.dart';
 import 'package:books_app/core/utils/assets.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
