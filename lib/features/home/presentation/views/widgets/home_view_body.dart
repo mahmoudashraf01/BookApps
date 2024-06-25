@@ -1,5 +1,5 @@
 import 'package:books_app/core/utils/text.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/best_seller_list_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/best_seller_list_view.dart';
 import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/list_view.dart';
 import 'package:flutter/material.dart';
@@ -19,8 +19,8 @@ class HomeViewBody extends StatelessWidget {
             children: [
               const CustomAppBar(),
               const BooksListView(),
-              const SizedBox(
-                height: 50,
+               SizedBox(
+                height: MediaQuery.of(context).size.height *.06,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -29,8 +29,8 @@ class HomeViewBody extends StatelessWidget {
                   style: title1Bold,
                 ),
               ),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: MediaQuery.of(context).size.height *.0009,
               ),
             ],
           ),

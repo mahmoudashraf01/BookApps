@@ -1,6 +1,6 @@
 import 'package:books_app/core/utils/colors.dart';
 import 'package:books_app/core/utils/text.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/similar_list_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/similar_list_view.dart';
 import 'package:flutter/material.dart';
 
 class SimilarBooks extends StatelessWidget {

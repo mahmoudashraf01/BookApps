@@ -1,6 +1,6 @@
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/book_details.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/books_action.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/similar_books.dart';
+import 'package:books_app/features/home/presentation/views/widgets/book_details.dart';
+import 'package:books_app/features/home/presentation/views/widgets/books_action.dart';
+import 'package:books_app/features/home/presentation/views/widgets/similar_books.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

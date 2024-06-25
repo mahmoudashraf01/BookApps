@@ -7,7 +7,7 @@ class BookAction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       children: [
         const Expanded(
           child: CustomButton(
@@ -17,9 +17,7 @@ class BookAction extends StatelessWidget {
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(10),
               bottomLeft: Radius.circular(10),
-
             ),
-
           ),
         ),
         Expanded(
@@ -30,7 +28,7 @@ class BookAction extends StatelessWidget {
             borderRadius: const BorderRadius.only(
               topRight: Radius.circular(10),
               bottomRight: Radius.circular(10),
-            ), 
+            ),
           ),
         ),
       ],

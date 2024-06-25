@@ -1,7 +1,7 @@
 import 'package:books_app/core/utils/app_routers.dart';
 import 'package:books_app/core/utils/assets.dart';
 import 'package:books_app/core/utils/text.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/book_rating.dart';
+import 'package:books_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
