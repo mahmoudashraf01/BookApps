@@ -1,9 +1,9 @@
+import 'package:books_app/features/home/data/Models/BookModel/reading_models.dart';
 import 'package:equatable/equatable.dart';
 
 import 'image_links.dart';
 import 'industry_identifier.dart';
 import 'panelization_summary.dart';
-import 'reading_modes.dart';
 
 class VolumeInfo extends Equatable {
   final String? title;
