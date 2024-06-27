@@ -15,6 +15,7 @@ class SimilarBookListView extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 5),
             child: CustomImage(
               aspectRatio: 2.9 / 4,
+              imgUrl: 'assets/images/LOTR.jpg',
             ),
           );
         },

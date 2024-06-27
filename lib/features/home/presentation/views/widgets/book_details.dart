@@ -19,6 +19,7 @@ class BookDetails extends StatelessWidget {
           ),
           child: const CustomImage(
             aspectRatio: 3 / 4,
+            imgUrl: 'assets/images/LOTR.jpg',
           ),
         ),
         const SizedBox(
