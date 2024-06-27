@@ -28,7 +28,7 @@ class ServerFailure extends Failure {
 
       case DioExceptionType.connectionError:
         return ServerFailure(
-            'Please, check your connection and try again later!');
+            'Please, Check Your Internet Connection.');
 
       case DioExceptionType.unknown:
         if (dioException.message!.contains('SoketExeption')) {
