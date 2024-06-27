@@ -1,4 +1,4 @@
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_image.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/material.dart';
 
 class SimilarBookListView extends StatelessWidget {

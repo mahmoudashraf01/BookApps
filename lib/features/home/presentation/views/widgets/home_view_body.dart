@@ -1,7 +1,7 @@
 import 'package:books_app/core/utils/text.dart';
 import 'package:books_app/features/home/presentation/views/widgets/best_seller_list_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:books_app/features/home/presentation/views/widgets/list_view.dart';
-import 'package:books_app/features/spalsh/presentation/views/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

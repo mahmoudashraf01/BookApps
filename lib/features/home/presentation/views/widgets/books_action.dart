@@ -1,5 +1,5 @@
 import 'package:books_app/core/utils/colors.dart';
-import 'package:books_app/core/utils/widgets/custom_button.dart';
+import 'package:books_app/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
 class BookAction extends StatelessWidget {
