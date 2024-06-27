@@ -1,4 +1,7 @@
+import 'package:books_app/core/widgets/custom_loading_indicator.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomImage extends StatelessWidget {
   const CustomImage(
@@ -7,15 +10,22 @@ class CustomImage extends StatelessWidget {
   final double aspectRatio;
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: aspectRatio,
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(
-            image: NetworkImage(imgUrl),
-            fit: BoxFit.cover,
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(10),
+      child: AspectRatio(
+        aspectRatio: aspectRatio,
+        child: CachedNetworkImage(
+          imageUrl: imgUrl,
+          fit: BoxFit.cover,
+          placeholder: (context, url) => const SizedBox(
+            width: 20,
+            height: 20,
+            child: Center(
+              child: CustomLoadingIndicator(),
+            ),
           ),
+          errorWidget: (context, url, error) =>
+              const Icon(FontAwesomeIcons.triangleExclamation),
         ),
       ),
     );
