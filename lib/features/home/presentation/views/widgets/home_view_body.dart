@@ -1,5 +1,5 @@
 import 'package:books_app/core/utils/text.dart';
-import 'package:books_app/features/home/presentation/views/widgets/best_seller_list_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/newest_books_list_view.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_app_bar.dart';
 import 'package:books_app/features/home/presentation/views/widgets/list_view.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +20,7 @@ class HomeViewBody extends StatelessWidget {
               const CustomAppBar(),
               const FeaturedBooksListView(),
                SizedBox(
-                height: MediaQuery.of(context).size.height *.06,
+                height: MediaQuery.of(context).size.height *.05,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),

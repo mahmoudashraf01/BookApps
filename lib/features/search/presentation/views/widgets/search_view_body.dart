@@ -1,5 +1,5 @@
 import 'package:books_app/core/utils/text.dart';
-import 'package:books_app/features/home/presentation/views/widgets/best_seller_view.dart';
+import 'package:books_app/features/home/presentation/views/widgets/newest_book_view.dart';
 import 'package:books_app/features/search/presentation/views/widgets/custom_text_field.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +47,7 @@ class SearchResultListView extends StatelessWidget {
       itemBuilder: (context, index) {
         return const Padding(
           padding: EdgeInsets.only(bottom: 20),
-          child: BestSellerListViewItem(),
+          // child: NewestBooksListViewItem(bookModel: ,),
         );
       },
     );

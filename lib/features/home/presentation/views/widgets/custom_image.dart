@@ -1,4 +1,3 @@
-import 'package:books_app/core/widgets/custom_loading_indicator.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -17,13 +16,6 @@ class CustomImage extends StatelessWidget {
         child: CachedNetworkImage(
           imageUrl: imgUrl,
           fit: BoxFit.cover,
-          placeholder: (context, url) => const SizedBox(
-            width: 20,
-            height: 20,
-            child: Center(
-              child: CustomLoadingIndicator(),
-            ),
-          ),
           errorWidget: (context, url, error) =>
               const Icon(FontAwesomeIcons.triangleExclamation),
         ),
