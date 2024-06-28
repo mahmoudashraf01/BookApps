@@ -1,12 +1,17 @@
 import 'package:books_app/core/utils/colors.dart';
 import 'package:books_app/core/utils/text.dart';
+import 'package:books_app/features/home/data/Models/BookModel/book_model.dart';
 import 'package:books_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/material.dart';
 
 class BookDetails extends StatelessWidget {
-  const BookDetails({super.key});
+  const BookDetails({
+    super.key,
+    required this.book,
+  });
 
+  final BookModel book;
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -17,35 +22,36 @@ class BookDetails extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: width * 0.15,
           ),
-          child: const CustomImage(
+          child: CustomImage(
             aspectRatio: 3 / 4,
-            imgUrl: 'assets/images/LOTR.jpg',
+            imgUrl: book.volumeInfo.imageLinks.thumbnail,
           ),
         ),
         const SizedBox(
           height: 20,
         ),
         Text(
-          'The Lord Of The Rings',
+          book.volumeInfo.title ?? '',
           style: h4Bold,
-          maxLines: 1,
+          maxLines: 2,
           overflow: TextOverflow.ellipsis,
+          textAlign: TextAlign.center,
         ),
         const SizedBox(
           height: 3,
         ),
         Text(
-          'J.Tolken',
+          book.volumeInfo.authors?[0] ?? '',
           style: title1Bold.copyWith(
               fontStyle: FontStyle.italic, color: white.withOpacity(0.8)),
         ),
         const SizedBox(
           height: 5,
         ),
-        const BookRating(
+         BookRating(
           mainAxisAlignment: MainAxisAlignment.center,
-          rating: 5,
-          count: 250,
+          rating: book.volumeInfo.averageRating?? 0,
+          count: book.volumeInfo.ratingsCount ?? 0,
         ),
       ],
     );

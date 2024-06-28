@@ -24,9 +24,11 @@ class _BookDetailsViewState extends State<BookDetailsView> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: CustomAppBarBookView(),
-      body: BookDetailsViewBody(),
+    return Scaffold(
+      appBar: const CustomAppBarBookView(),
+      body: BookDetailsViewBody(
+        book: widget.bookModel,
+      ),
     );
   }
 }
