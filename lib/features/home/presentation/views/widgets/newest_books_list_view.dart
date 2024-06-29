@@ -1,5 +1,5 @@
 import 'package:books_app/core/widgets/custom_error_widget.dart';
-import 'package:books_app/features/home/presentation/views/widgets/custom_shimmer_loadingf_books.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_shimmer_loading_n_books.dart';
 import 'package:books_app/features/home/presentation/manager/newest_books_cubit/newest_books_cubit.dart';
 import 'package:books_app/features/home/presentation/views/widgets/newest_book_view_item.dart';
 import 'package:flutter/material.dart';

@@ -3,9 +3,11 @@ import 'package:books_app/core/widgets/custom_error_widget.dart';
 import 'package:books_app/core/widgets/custom_loading_indicator.dart';
 import 'package:books_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit_cubit.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_image.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_loading_imagef_books.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shimmer_loading/shimmer_loading.dart';
 
 class SimilarBookListView extends StatelessWidget {
   const SimilarBookListView({super.key});
@@ -43,9 +45,34 @@ class SimilarBookListView extends StatelessWidget {
         } else if (state is SimilarBooksCubitFailure) {
           return CustomErrorWidget(errMessage: state.errMessage);
         } else {
-          return const CustomLoadingIndicator();
+          return const SimilarBookLoadingListView();
         }
       },
+    );
+  }
+}
+
+class SimilarBookLoadingListView extends StatelessWidget {
+  const SimilarBookLoadingListView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ShimmerLoading(
+      child: SizedBox(
+        height: MediaQuery.of(context).size.height * .16,
+        child: ListView.builder(
+          itemCount: 4,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 5),
+              child: CustomLoadingImage(
+                aspectRatio: 2.9 / 4,
+              ),
+            );
+          },
+        ),
+      ),
     );
   }
 }
