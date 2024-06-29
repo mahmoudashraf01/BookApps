@@ -1,6 +1,6 @@
 import 'package:books_app/core/utils/app_routers.dart';
 import 'package:books_app/core/widgets/custom_error_widget.dart';
-import 'package:books_app/core/widgets/custom_shimmer_loading.dart';
+import 'package:books_app/features/home/presentation/views/widgets/custom_shimmer_loadingf_books.dart';
 import 'package:books_app/features/home/presentation/manager/featured_books_cubit/featured_books_cubit.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/cupertino.dart';
@@ -44,7 +44,7 @@ class FeaturedBooksListView extends StatelessWidget {
         } else if (state is FeaturedBooksFailure) {
           return CustomErrorWidget(errMessage: state.errMessage);
         } else {
-          return const CustomShimmerLoading(
+          return const CustomShimmerLoadingFbooks(
             imagRatio: 2.5 / 4,
           );
         }
