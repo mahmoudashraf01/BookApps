@@ -47,8 +47,6 @@ class CustomAppBarBookView extends StatelessWidget
         iconData: FontAwesomeIcons.xmark,
       ),
       forceMaterialTransparency: true,
-      title: const Icon(FontAwesomeIcons.cartShopping),
-      titleSpacing: MediaQuery.of(context).size.width * .7,
     );
   }
 }
