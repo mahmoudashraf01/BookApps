@@ -1,4 +1,4 @@
-import 'package:books_app/features/home/data/Models/BookModel/book_model.dart';
+import 'package:books_app/core/Models/BookModel/book_model.dart';
 import 'package:books_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit_cubit.dart';
 import 'package:books_app/features/home/presentation/views/widgets/book_details_view_body.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_app_bar.dart';

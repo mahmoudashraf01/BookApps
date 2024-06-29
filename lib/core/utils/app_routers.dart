@@ -1,5 +1,5 @@
 import 'package:books_app/core/utils/service_locator.dart';
-import 'package:books_app/features/home/data/Models/BookModel/book_model.dart';
+import 'package:books_app/core/Models/BookModel/book_model.dart';
 import 'package:books_app/features/home/data/repos/home_repo_implementation.dart';
 import 'package:books_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit_cubit.dart';
 import 'package:books_app/features/home/presentation/views/book_details_view.dart';

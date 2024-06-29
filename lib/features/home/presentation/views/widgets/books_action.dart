@@ -1,7 +1,7 @@
 import 'package:books_app/core/utils/colors.dart';
 import 'package:books_app/core/utils/functions/launch_url.dart';
 import 'package:books_app/core/widgets/custom_button.dart';
-import 'package:books_app/features/home/data/Models/BookModel/book_model.dart';
+import 'package:books_app/core/Models/BookModel/book_model.dart';
 import 'package:flutter/material.dart';
 
 class BookAction extends StatelessWidget {

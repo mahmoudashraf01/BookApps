@@ -1,4 +1,4 @@
-import 'package:books_app/features/home/data/Models/BookModel/reading_models.dart';
+import 'package:books_app/core/Models/BookModel/reading_models.dart';
 import 'package:equatable/equatable.dart';
 
 import 'image_links.dart';

@@ -1,6 +1,6 @@
 import 'package:books_app/core/utils/colors.dart';
 import 'package:books_app/core/utils/text.dart';
-import 'package:books_app/features/home/data/Models/BookModel/book_model.dart';
+import 'package:books_app/core/Models/BookModel/book_model.dart';
 import 'package:books_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_image.dart';
 import 'package:flutter/material.dart';

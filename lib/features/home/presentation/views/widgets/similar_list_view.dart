@@ -1,6 +1,5 @@
 import 'package:books_app/core/utils/app_routers.dart';
 import 'package:books_app/core/widgets/custom_error_widget.dart';
-import 'package:books_app/core/widgets/custom_loading_indicator.dart';
 import 'package:books_app/features/home/presentation/manager/similar_books_cubit/similar_books_cubit_cubit.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_image.dart';
 import 'package:books_app/features/home/presentation/views/widgets/custom_loading_imagef_books.dart';

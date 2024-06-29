@@ -10,7 +10,7 @@ class CustomShimmerLoadingNbooks extends StatelessWidget {
     return ShimmerLoading(
       child: ListView.builder(
         physics: const NeverScrollableScrollPhysics(),
-        itemCount: 10,
+        itemCount: 3,
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.only(bottom: 20),

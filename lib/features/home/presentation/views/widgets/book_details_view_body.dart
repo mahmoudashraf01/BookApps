@@ -1,4 +1,4 @@
-import 'package:books_app/features/home/data/Models/BookModel/book_model.dart';
+import 'package:books_app/core/Models/BookModel/book_model.dart';
 import 'package:books_app/features/home/presentation/views/widgets/book_details.dart';
 import 'package:books_app/features/home/presentation/views/widgets/books_action.dart';
 import 'package:books_app/features/home/presentation/views/widgets/similar_books.dart';
