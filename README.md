@@ -16,7 +16,11 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 <div>
-  <h3>This are General News</h3>
+  <h3>This app use Google Books Api as a backend for fetching books.</h3>
+</div>
+
+<div>
+  <h3>Home Page</h3>
   
   <img src="https://github.com/mahmoudashraf01/BookApps/assets/126792022/94f535be-a233-4893-a582-f59d98174663" alt="Home Page">
 </div>
