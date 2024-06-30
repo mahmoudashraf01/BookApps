@@ -6,7 +6,7 @@ class SearchView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  const Scaffold(
       // appBar: AppBar(
       //   leading: const MyBackButton(iconData: FontAwesomeIcons.arrowLeft),
       //   forceMaterialTransparency: true,
@@ -15,4 +15,3 @@ class SearchView extends StatelessWidget {
     );
   }
 }
-
