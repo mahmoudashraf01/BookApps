@@ -18,7 +18,7 @@ class SearchViewBody extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: width * .03, vertical: 20),
-      child: Column(
+      child:  Column(
         children: [
           const CustomTextField(),
           const SizedBox(
