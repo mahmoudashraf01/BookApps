@@ -9,7 +9,7 @@ class SearchForBookCubit extends Cubit<SearchForBookState> {
   SearchForBookCubit(this.searchRepo) : super(SearchForBookInitial());
 
   final SearchRepo searchRepo;
-  Future<void> fetchSimillarBooks({required String bookName}) async {
+  Future<void> fetchSearchBooks({required String bookName}) async {
     emit(SearchForBookLoading());
     //Either<Failure, List<BookModel>> result
     var result = await searchRepo.fetchSearchBooks(bookName: bookName);
