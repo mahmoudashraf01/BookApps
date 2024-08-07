@@ -19,8 +19,8 @@ class HomeViewBody extends StatelessWidget {
             children: [
               const CustomAppBar(),
               const FeaturedBooksListView(),
-               SizedBox(
-                height: MediaQuery.of(context).size.height *.05,
+              SizedBox(
+                height: MediaQuery.of(context).size.height * .05,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -30,16 +30,15 @@ class HomeViewBody extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height *.0009,
+                height: MediaQuery.of(context).size.height * .0009,
               ),
             ],
           ),
         ),
         const SliverFillRemaining(
           child: NewestBooksListView(),
-        )
+        ),
       ],
     );
   }
 }
-

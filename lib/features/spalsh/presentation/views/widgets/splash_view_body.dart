@@ -38,7 +38,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       children: [
         Image.asset(Assets.logo),
         const SizedBox(
-          height: 5,
+          height: 1,
         ),
         Center(
           //to rebuild only this widget and optimize the app performance
@@ -54,7 +54,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       duration: const Duration(seconds: 3),
     );
     slidingAnimation =
-        Tween<Offset>(begin: const Offset(0, 6), end: Offset.zero)
+        Tween<Offset>(begin: const Offset(0, 8), end: Offset.zero)
             .animate(animationController);
     animationController.forward();
   }
